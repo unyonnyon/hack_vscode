@@ -2,6 +2,8 @@
 
 ## .vscode
 
+---
+
 プロジェクト(ワークスペース)ごとに設定を固定することができる。setting の優先度としては、Workspace > User となる。
 
 ```json
@@ -25,6 +27,8 @@
 ```
 
 ## フロントエンド系
+
+---
 
 ### prettier
 
@@ -63,7 +67,27 @@
 
 ### eslint
 
-構文チェックを行ってくれる。
+拡張機能とは別に npm で eslint パッケージをインストールする必要がある。構文チェックを行ってくれる。ルールが膨大なため、何を重視するか精査が必要。
+コード整形を prettier に任せ、構文を eslint でチェックする形となる。
+
+```json
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "no-unused-vars": ["error"],
+    "no-console": ["warn"]
+  }
+}
+```
+
+> ルール参考
+> <https://qiita.com/khsk/items/0f200fc3a4a3542efa90>
+
+Vue.js や React.js に特化している eslint プラグインも存在する。ex) eslint-plugin-vue
 
 ### vetur
 
@@ -71,15 +95,20 @@ vue 開発時の etc が含まれる（特に snippet とか）。
 
 ## Python 系
 
+---
+
 ### Pylance
 
 最近出てきた言語サーバー。コード補間（サードパーティ、自作問わず）。MyPy と組み合わせると型チェックも行ってくれる。
 
 ### MS.Python
 
-コード補間やデバッグ機能が含まれている。最近では Jupyter が同梱されるようになり、始めから jupyter notebook や jupyter lab を活用することができる
+コード補間やデバッグ機能が含まれている。最近では Jupyter が同梱されるようになり、
+始めから jupyter notebook や jupyter lab を活用することができる
 
 ## Tips
+
+---
 
 Tips 活用の以下を達成することでコード品質の向上、作業時間の短縮を図る
 
@@ -107,6 +136,8 @@ Tips 活用の以下を達成することでコード品質の向上、作業時
 括弧を閉じるところをハイライトしてくれる。ネストしがちな javascript や vue の script タグを記載する際に役立つ。
 
 ## Git 関連
+
+---
 
 ### Git Graph
 

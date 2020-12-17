@@ -10,7 +10,7 @@
       "files": ["*.js"],
       "options": {
         "requirePragma": true,
-        "semi": true,
+        "semi": false,
         "tabWidth": 2
       }
     },
