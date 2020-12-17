@@ -1,0 +1,27 @@
+{
+  "overrides": [
+    {
+      "files": ["*.json", "*.html"],
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": ["*.js"],
+      "options": {
+        "requirePragma": true,
+        "semi": true,
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": ["*.vue"],
+      "options": {
+        "singleQuote": true,
+        "semi": true,
+        "tabWidth": 2,
+        "vueIndentScriptAndStyle": false
+      }
+    }
+  ]
+}

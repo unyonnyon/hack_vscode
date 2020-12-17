@@ -1,0 +1,12 @@
+{
+  "name": "hack_vscode",
+  "version": "1.0.0",
+  "description": "ソースコードを整形する拡張機能。`.pretiierrc.json/yaml`の設定ファイルをプロジェクト直下に置くと細かな設定ができる。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
